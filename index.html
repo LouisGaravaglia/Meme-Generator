@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-container">
+      <button type="button" name="button" class="logo">MEME GENERATOR</button>
+    </div>
+
+    <div class="form">
+      <form>
+        <label for="link">URL:</label>
+        <input
+          type="url"
+          id="link"
+          name="link"
+          placeholder="URL for image."
+          size="60"
+        /><br />
+        <label for="topText">TOP TEXT:</label>
+        <input
+          type="text"
+          id="topText"
+          name="topText"
+          placeholder="Text that will go on the top of the meme."
+          size="60"
+        /><br />
+        <label for="bottomText">BOTTOM TEXT:</label>
+        <input
+          type="text"
+          id="bottomText"
+          name="bottomText"
+          placeholder="Text that will go on the bottom of the meme."
+          size="60"
+        /><br />
+        <input type="submit" name="submit" value="SUBMIT" class="btn" />
+      </form>
+    </div>
+
+    <div class="meme-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
